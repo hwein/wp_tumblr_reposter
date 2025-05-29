@@ -1,4 +1,4 @@
-# Tumblr Poster für WordPress-Blog
+# Tumblr Poster für WordPress-Blog-Beiträge
 
 Dieses Python-Skript automatisiert die Veröffentlichung von Blogbeiträgen von einem WordPress-Blog auf Tumblr. Es wird jeweils der älteste noch nicht veröffentlichte Beitrag identifiziert, aufbereitet und gepostet – inklusive Bild, Tags und Backlink.
 
