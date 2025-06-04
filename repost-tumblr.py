@@ -103,7 +103,11 @@ def run_oauth_flow():
             with open(TOKENS_FILE, "w") as f:
                 json.dump(tokens, f, indent=2)
             print("Token erfolgreich gespeichert.")
+            # Mark authentication as done and stop the local Flask server
             token_container["done"] = True
+            shutdown = request.environ.get("werkzeug.server.shutdown")
+            if shutdown:
+                shutdown()
             return "Erfolgreich authentifiziert. Du kannst dieses Fenster schließen."
         return f"Fehler: {token_response.text}", 500
 
