@@ -45,7 +45,7 @@ Bereits gepostete WordPress-Post-IDs werden in `posted_entries.json` gespeichert
    ```bash
    pip install flask requests
    ```
-3. `CLIENT_ID` und `CLIENT_SECRET` von Tumblr im Skript eintragen
+3. `CLIENT_ID`, `CLIENT_SECRET`, `WORDPRESS_BLOG_URL` und `TUMBLR_BLOG_NAME` im Skript `repost-tumblr.py` eintragen
 
 ### Start
 ```bash
